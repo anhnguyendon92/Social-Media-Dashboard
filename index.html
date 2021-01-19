@@ -2,47 +2,264 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Media DashBoard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Social Media Dashboard</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-  <body class="dark">
-    <div class="wrapper">
-      <div class="container1">
-        <header>
-          <section>
-            <div class="header-headline">
-            <div class="header-headline-1">Social Media Dashboard</div>
-            <div class="header-headline-2">Total Follow: 32,408</div>
-            </div>
-            <div class="header-toggler">
-              <div style="font-weight: 700;">Dark Mode</div>
-            </div>
-            <div class="toggler" id="toggler">
-              <div id="toggle-circle" class="toggler-cricle"></div>
-            </div>
-          </section>
-
-          <section>
-            <div class="col-md-3 col-sm-6 padding-left resp-padding">
-              <div class="header-card facebook">
-                <div class="header-card 1">
-                  <span> <img src="images/icon-facebook.svg" alt=""/></span>
-                  <span class="header-card-1-name">@AnhNguyen</span>
-                </div>
-                <div class=header-card-2>1992</div>
-                <div class="header-card-3">Followers</div>
-                <div class="header-card-4">
-                  <span> <img src="images/icon-up.svg" alt=""/></span>
-                </div>
-              </div>
-            </div>
-          </section>
-        </header>
+  <div class="background-box"></div>
+  <div class="container">
+    <header class="header">
+      <div class="header-left">
+        <h1 class="header-title">Social Media Dashboard</h1>
+        <span class="header-subtext">Total Followers: 23,004</span>
       </div>
-    </div>
+      <div class="header-right toggle">
+        <label for="dark-mode" title="Dark mode toggle" class="toggle-label">Dark Mode</label>
+        <div class="toggle-button-wrapper">
+          <input type="checkbox" name="dark_mode" class="toggle-checkbox" id="dark-mode">
+          <span class="toggle-button"></span>
+        </div>
+      </div>
+    </header>
 
-  </body>
+    <section class="cards">
+      <div class="card card-blue">
+        <span class="social-media-tag">
+          <img alt="facebook icon" class="social-media-tag-image" src="./images/icon-facebook.svg">
+          @Fujiwara92
+        </span>
+        <div class="followers">
+          <span class="followers-number">1992</span>
+          <span class="followers-subtext">FOLLOWERS</span>
+        </div>
+        <span class="change">
+          &#9652; 12 Today
+        </span>
+      </div>
+
+      <div class="card card-blue">
+        <span class="social-media-tag">
+          <img alt="twitter icon" class="social-media-tag__image" src="./images/icon-twitter.svg">
+          @Fujiwara92
+        </span>
+        <div class="followers">
+          <span class="followers-number">1044</span>
+          <span class="followers-subtext">FOLLOWERS</span>
+        </div>
+        <span class="change">
+          &#9652; 99 Today
+        </span>
+      </div>
+
+      <div class="card card-colorful">
+        <span class="social-media-tag">
+          <img alt="instagram icon" class="social-media-tag-image" src="./images/icon-instagram.svg">
+          @fujiwara_brah
+        </span>
+        <div class="followers">
+          <span class="followers-number">11k</span>
+          <span class="followers-subtext">FOLLOWERS</span>
+        </div>
+        <span class="change">
+          &#9652; 1099 Today
+        </span>
+      </div>
+
+      <div class="card card-red">
+        <span class="social-media-tag">
+          <img alt="youtube icon" class="social-media-tag-image" src="./images/icon-youtube.svg">
+          Anh N.
+        </span>
+        <div class="followers">
+          <span class="followers-number">8239</span>
+          <span class="followers-subtext">SUBSCRIBERS</span>
+        </div>
+        <span class="change change-negative">
+          &#9662; 144 Today
+        </span>
+      </div>
+    </section>
+
+    <section class="bottom-cards">
+      <h2 class="bottom-cards-title">
+        Overview - Today
+      </h2>
+
+      <div class="cards">
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="facebook icon" class="social-media-tag-image" src="./images/icon-facebook.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="facebook icon" class="social-media-tag-image" src="./images/icon-facebook.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              LIKES
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="instagram icon" class="social-media-tag-image" src="./images/icon-instagram.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="instagram icon" class="social-media-tag-image" src="./images/icon-instagram.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="twitter icon" class="social-media-tag-image" src="./images/icon-twitter.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="twitter icon" class="social-media-tag-image" src="./images/icon-twitter.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="youtube icon" class="social-media-tag-image" src="./images/icon-youtube.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+
+        <div class="card card-columns">
+          <div class="card-column">
+            <span class="card-overview-type">
+              Page views
+            </span>
+            <span class="card-overview-value">
+              87
+            </span>
+          </div>
+          <div class="card-column">
+            <span class="card-overview-media">
+              <img alt="youtube icon" class="social-media-tag-image" src="./images/icon-youtube.svg">
+            </span>
+            <span class="change">
+              &#9662; 144 Today
+            </span>
+          </div>
+        </div> 
+      </div>
+    </section>
+  </div>
+
+
+  <script>
+    const toggleButton = document.getElementById('dark_mode');
+    const body = document.getElementsByTagName("body")[0];
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('light');
+    });
+  </script>
 </body>
 </html>
